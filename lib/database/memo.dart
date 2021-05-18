@@ -12,7 +12,7 @@ final String editTime_='editTime' ;
 class Memo{
 
   // 1. 모델 구현
-  int id ;
+  String id ;
    String title ;
    String text ;
    String createTime ;

@@ -75,7 +75,7 @@ class EditPage extends StatelessWidget {
 
     var fido = Memo();
 
-      //fido.id= str2Sha256(DateTime.now().toString());
+      fido.id= str2Sha256(DateTime.now().toString());
       fido.title=this.title;
       fido.text=this.text;
       fido.createTime= DateTime.now().toString();
@@ -89,12 +89,15 @@ class EditPage extends StatelessWidget {
     print('createTime : ${fido.createTime} 입니다');
     print('editTime : ${fido.editTime} 입니다');
 
-     await sd.insertMemo(fido);  // 데이터베이스에 memo추가
+    /*
+    await sd.insertMemo(fido);  // 데이터베이스에 memo추가
 
     print('debugging : '); // 디버깅용, 목록 출력
     print(await sd.getmemos(fido.id)); // 디버깅용, 목록 출력
 
      sd.close();
+
+     */
   }
 
     String str2Sha256(String text) { // https://pub.dev/packages/crypto 참고, 아규먼트 및 함수명 수정

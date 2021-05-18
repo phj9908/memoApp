@@ -29,6 +29,7 @@ class DBhelper{
   }
 
   // 3_1. 데이터 추가하기
+/*
    Future<Memo> insertMemo(Memo memo) async {
 
     memo.id = await _db.insert(  // 가져온 데이터를 테이블에 삽입
@@ -37,7 +38,7 @@ class DBhelper{
 
      return memo;
    }
-
+*/
    // 3_2.얻은 데이터를 list<Memo>형으로 변환
    Future<Memo> getmemos(int id) async{
     
